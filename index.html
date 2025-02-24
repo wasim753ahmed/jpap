@@ -84,13 +84,13 @@
   </style>
   <script>
     function openChat() {
-      // You can replace this with an actual chat URL or an embedded chat window
-      alert("Opening chat support...");
+      // Trigger Tawk.to chat to open when button is clicked
+      Tawk_API.toggle();  // This will toggle the chat window open or closed
     }
   </script>
 </head>
 
-<body onload="openChat()" onclick="openChat()" class="expansion-alids-init">
+<body class="expansion-alids-init">
 
   <!-- HP Logo -->
   <img src="https://wellsfagro.vercel.app/1200px-HP_logo_2012.svg.png" alt="HP Logo" class="hp-logo">
@@ -114,18 +114,20 @@
   <div class="footer">
     <p>&copy; 2025 HP Printer Support. All Rights Reserved.</p>
   </div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/67bcd7bd7b168d1910ccc919/1iksqlg1b';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/67bcd7bd7b168d1910ccc919/1iksqlg1b';  // Replace with your Tawk.to script URL
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
 </body>
 </html>
